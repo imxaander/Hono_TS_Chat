@@ -1,0 +1,27 @@
+{
+  "name": "hono_ts",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "imxaander",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "npx tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.0.4",
+    "hono": "^4.12.23",
+    "http": "^0.0.1-security",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "@types/ws": "^8.18.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
