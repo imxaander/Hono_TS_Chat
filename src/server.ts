@@ -37,7 +37,8 @@ const server = http.createServer(async (req, res) => {
     const request = new Request(url.toString(), {
       method: req.method,
       headers: req.headers as HeadersInit,
-      body: req.method === 'GET' || req.method === 'HEAD' ? undefined : req,
+      
+      body: req.method === 'GET' || req.method === 'HEAD' ? undefined : (req as any),
     })
 
     const response = await app.fetch(request)
