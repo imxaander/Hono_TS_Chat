@@ -1,5 +1,5 @@
 // public/demo.js (browser)
-const ws = new WebSocket('ws://hono-ts-chat.onrender.com/ws');
+const ws = new WebSocket('wss://hono-ts-chat.onrender.com/ws');
 
 let currentRoom = '';
 let rooms = [
