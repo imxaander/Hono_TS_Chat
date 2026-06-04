@@ -1,6 +1,6 @@
 import type { WebSocket } from 'ws'
-import type { ClientMessage, ServerMessage } from '../types/message'
-import { RoomManager } from './rooms'
+import type { ClientMessage, ServerMessage } from '../types/message.js'
+import { RoomManager } from './rooms.js'
 
 export function handleClientMessage(socket: WebSocket, msg: ClientMessage, rooms: RoomManager) {
   if (!msg || typeof msg.action !== 'string') {

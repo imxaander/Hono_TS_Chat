@@ -1,8 +1,8 @@
 import http from 'http'
 import { Hono } from 'hono'
 import { WebSocketServer, type WebSocket } from 'ws'
-import { RoomManager } from './ws/rooms'
-import { handleClientMessage } from './ws/messages'
+import { RoomManager } from './ws/rooms.js'
+import { handleClientMessage } from './ws/messages.js'
 import { serveStatic } from '@hono/node-server/serve-static'
 
 
