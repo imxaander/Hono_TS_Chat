@@ -1,5 +1,5 @@
 // public/demo.js (browser)
-const ws = new WebSocket('ws://localhost:3000/ws');
+const ws = new WebSocket('ws://hono-ts-chat.onrender.com/ws');
 
 let currentRoom = '';
 let rooms = [
@@ -29,7 +29,7 @@ ws.addEventListener('error', (e) => console.error('ws error', e));
 
 async function getRooms(){
     
-    const response = await fetch("http://localhost:3000/rooms", {
+    const response = await fetch("https://hono-ts-chat.onrender.com/rooms", {
     method: "GET",
     })
 
